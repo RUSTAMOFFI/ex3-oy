@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    border: none;
+}
 .continer{
+    margin: 0 auto;
 display: flex;
-width: 1400px;
+justify-content: space-between ;
+width: 1600px;
 }
 .burger{
 display: flex;
@@ -13,65 +18,68 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
     margin: 0 auto;
+
     height: 100vh;
     .center {
         display: flex;
         flex-direction: column;
+
     }
 
 }
 .btn{
+    color: rgb(20, 201, 83);
     margin-top: 100px;
-    background-color: blueviolet;
-    border-radius: 40% 0;
+    border-radius:0 40% ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 400px;
     height: 600px;
+    background-color: rebeccapurple;
     .h3{
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
-        
     }
-    
 }
-
-button{
+.btn button{
     width: 100px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     &:nth-child(1){
         background-color:rgba(165, 42, 56, 0.987) ;
 color: wheat;
     }
     &:nth-child(2){
-        background-color:yellow ;
+        background-color:rgb(200, 255, 0) ;
         color:rgb(0, 0, 0) ;
         margin-right: 100px;
     }
-    &:nth-child(3){
+}
+.buyrtma{
+  
+    display: flex;
+    margin-top: 250px;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+   button{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+       &:nth-child(1){
         background-color:green ;
-        color: rgb(120, 30, 30);  
+color: wheat;
     }
-    &:nth-child(4){
-        background-color:orangered ;
-        color:white ;
+    &:nth-child(2){
+        background-color:red;
+        color:rgb(0, 0, 0) ;
         margin-right: 100px;
-
     }
-    &:nth-child(5){
-        background-color: red;
-        color: yellow;
-    }
-    &:nth-child(6){
-        background-color:grey ;
-        color:whitesmoke ;
-        margin-right: 100px;
-
-    }
+ }
 }
